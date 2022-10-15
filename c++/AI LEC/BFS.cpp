@@ -10,7 +10,7 @@ class Graph {
   list<int>* adjLists;
   bool* visited;
 
-   public:
+  public:
   Graph(int vertices);
   void addEdge(int src, int dest);
   void BFS(int startVertex);
@@ -45,7 +45,7 @@ void Graph::BFS(int startVertex) {
   while (!queue.empty()) {
     int currVertex = queue.front();
     cout << "Visited " << currVertex << " ";
-    if (currVertex == 4){
+    if (currVertex == 2){
       cout<<"the goal";
       break;}
     queue.pop_front();
